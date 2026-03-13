@@ -5,7 +5,8 @@ btn.addEventListener("click", () => {
   if (username.value === "admin" && password.value === "admin") {
     window.location.href = "main.html";
   } else {
-    alert("Login failed");
+    let errorMessage = document.getElementById("error-message");
+    errorMessage.style.display = "block";
   }
 });
 

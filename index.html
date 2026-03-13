@@ -8,6 +8,12 @@
     <script src="index.js" defer></script>
   </head>
   <body>
+    <div class="login-error">
+        <p id="error-message">
+          ! login failed. Please check your username and password and try again.
+          <button id="login-error-btn" onclick="this.parentElement.style.display = 'none'">Close</button>
+        </p>
+    </div>
     <div class="bg-container">
       <h1>Welcome to TaskFlow</h1>
       <p>Please login to continue</p>
@@ -30,7 +36,7 @@
       <div class="btn-container">
         <button class="btn" id="btn">Login</button>
       <button class="btn" id="guest" onclick="window.location.href = 'main.html'">
-        Login Guest
+        Login as Guest
       </button>
       </div>
       
