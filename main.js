@@ -1,3 +1,7 @@
+let toggleBtn = document.querySelector(".toggle-btn");
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
 let task = document.getElementById("task");
 task.classList.add("task-input-placeholder");
 let addBtn = document.getElementById("addTask");
