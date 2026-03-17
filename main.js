@@ -3,6 +3,7 @@ toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 let task = document.getElementById("task");
+let totalTasks = document.getElementById("total-tasks");
 task.classList.add("task-input-placeholder");
 let addBtn = document.getElementById("addTask");
 let taskList = document.getElementById("tasklist");
@@ -117,3 +118,7 @@ window.addEventListener("keydown", (e) => {
     task.value = "";
   }
 });
+
+setInterval(() => {
+  totalTasks.textContent = `Total Tasks: ${taskList.children.length}/${completedTasks.children.length}`;
+}, 100);
