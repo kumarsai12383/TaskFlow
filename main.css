@@ -83,7 +83,7 @@ body {
   border: none;
   cursor: pointer;
 }
-.delete-btn {
+.delete-btn ,.edit-btn {
   padding: 10px;
   background-color: #4caf50;
   color: white;
